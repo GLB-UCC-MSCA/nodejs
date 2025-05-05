@@ -34,7 +34,7 @@ jobs:
         run: |
           curl -L https://github.com/DE-MUC-UCC-OSEM/nodejs/releases/download/$NODEJS_VERSION-r$NODEJS_RELEASE/nodejs-$NODEJS_VERSION-r$NODEJS_RELEASE-x86_64.tar.xz -o ${{ github.workspace }}/nodejs-$NODEJS_VERSION-r$NODEJS_RELEASE-x86_64.tar.xz
           curl -L https://github.com/DE-MUC-UCC-OSEM/nodejs/releases/download/$NODEJS_VERSION-r$NODEJS_RELEASE/nodejs-$NODEJS_VERSION-r$NODEJS_RELEASE-aarch64.tar.xz -o ${{ github.workspace }}/nodejs-$NODEJS_VERSION-r$NODEJS_RELEASE-aarch64.tar.xz
-          mkdir -p ${{ github.workspace }}/{files}
+          mkdir -p ${{ github.workspace }}/files
           tar --directory ${{ github.workspace }}/files -xvf ${{ github.workspace }}/nodejs-$NODEJS_VERSION-r$NODEJS_RELEASE-x86_64.tar.xz
           sed -i -e "s/__VERSION__/$NODEJS_VERSION/" ${{ github.workspace }}/nodejs.spec
           sed -i -e "s/__RELEASE__/$NODEJS_RELEASE/" ${{ github.workspace }}/nodejs.spec
