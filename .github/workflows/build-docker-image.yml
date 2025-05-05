@@ -32,7 +32,7 @@ jobs:
           NODEJS_VERSION: ${{ github.event.inputs.nodejs }}
           RELEASE_VERSION: ${{ github.event.inputs.release }}
         run: |
-          curl -L https://github.com/DE-MUC-UCC-OSEM/nodejs/releases/download/$NODEJS_VERSION-r$RELEASE_VERSION/nodejs-$NODEJS_VERSION-r$RELEASE_VERSION-x86_64.tar.xz -o nodejs-$NODEJS_VERSION-r$RELEASE_VERSION-x86_64.tar.xz \
+          curl -L https://github.com/DE-MUC-UCC-OSEM/nodejs/releases/download/$NODEJS_VERSION-r$RELEASE_VERSION/nodejs-$NODEJS_VERSION-r$RELEASE_VERSION-x86_64.tar.xz -o nodejs-$NODEJS_VERSION-r$RELEASE_VERSION-x86_64.tar.xz
           curl -L https://github.com/DE-MUC-UCC-OSEM/nodejs/releases/download/$NODEJS_VERSION-r$RELEASE_VERSION/nodejs-$NODEJS_VERSION-r$RELEASE_VERSION-aarch64.tar.xz -o nodejs-$NODEJS_VERSION-r$RELEASE_VERSION-aarch64.tar.xz
       
       - name: Log in to Docker Hub
