@@ -53,4 +53,4 @@ jobs:
         if: ${{ always() }}
         run: |
           echo "Cleaning up environment..."
-          # git clean -ffdx
+          git clean -ffdx
