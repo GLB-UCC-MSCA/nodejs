@@ -47,7 +47,7 @@ jobs:
           NODEJS_VERSION: ${{ github.event.inputs.version }}
           NODEJS_RELEASE: ${{ github.event.inputs.release }}
         run: |
-          gh release upload $NODEJS_VERSION-NODEJS_RELEASE x86_64/nodejs-binary-$NODEJS_VERSION-r$NODEJS_RELEASE.x86_64.rpm
+          gh release upload $NODEJS_VERSION-NODEJS_RELEASE x86_64/nodejs-binary-$NODEJS_VERSION-$NODEJS_RELEASE.x86_64.rpm
 
       - name: Cleanup environment
         if: ${{ always() }}
