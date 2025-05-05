@@ -52,4 +52,5 @@ jobs:
       - name: Cleanup environment
         if: ${{ always() }}
         run: |
-          git clean -ffdx
+          echo "Cleaning up environment..."
+          # git clean -ffdx
