@@ -1,9 +1,9 @@
 [![Build Docker Image](https://github.com/DE-MUC-UCC-OSEM/nodejs/actions/workflows/build-docker-image.yml/badge.svg)](https://github.com/DE-MUC-UCC-OSEM/nodejs/actions/workflows/build-docker-image.yml)
 
 ## Information
-Nodejs running in a minimal OpenSUSE Docker Image
+Nodejs running in a minimal OpenSUSE Docker image
 
-Using a pre-built Nodejs executable version. Everything put into a minimal Container image built from an OpenSUSE tumbleweed image
+Using a pre-built nodejs executable version. Everything put into a minimal container image built from OpenSUSE tumbleweed.
 
 ## Run the image
 
